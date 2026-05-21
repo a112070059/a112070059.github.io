@@ -1,0 +1,56 @@
+.a112070059center{
+    text-align: center;
+    color:purple;
+    background-color: yellow;
+
+}
+.ryanintro{
+    text-align: center;
+    color:purple;
+    background-color: yellow;
+    border: 10px solid purple;
+    padding: 15px 50px;
+    border-radius: 20px 20px 20px 20px;
+    margin: -40px auto 0 auto;
+    width: 70%;
+    height: 150px;
+}
+.centercenter{
+    text-align: center;
+}
+
+a.andylink{
+    color:purple; 
+}
+.ryanbig{
+    font-size:20px;
+    font-weight: 800;
+}
+.ryango{
+    font-size:50px;
+    text-align: center;
+}
+section#about {
+    background: blue;
+    background-image: url("../assets/img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#about h1{
+    color:white;
+}
+
+section#about h2{
+    color:white;
+}
+
+section#cta {
+    background: yellow;
+}
+
+section#cta h2{
+    color: green;
+}
