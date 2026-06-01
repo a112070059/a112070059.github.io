@@ -103,3 +103,45 @@ section#cta h2{
     padding-top: 8px;
     margin-top: 10px;
 }
+
+.card-group .card .card-img-top {
+    width: 100%;
+    height: 250px;           
+    object-fit: cover;       
+    object-position: center; 
+    border-bottom: 4px solid purple; 
+}
+
+.card-group .card {
+    background-color: #ffffff; 
+    border: 3px solid purple; 
+    border-radius: 12px;       
+    overflow: hidden;          
+    margin: 10px;              
+    box-shadow: 5px 5px 0px rgba(128, 0, 128, 0.15); 
+}
+
+.card-group .card .card-title {
+    color: purple;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: yellow;
+    border: 4px double purple; 
+    display: inline-block;     
+    padding: 4px 10px;        
+    border-radius: 4px;    
+    margin-bottom: 15px;
+}
+
+.card-group .card .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;            /* 溫和的深灰墨色 */
+    text-align: justify;       /* 文字左右齊行 */
+}
+
+.card-group .card .card-footer {
+    background-color: rgba(255, 255, 0, 0.1); /* 10% 透明度的黃色，非常優雅 */
+    border-top: 2px dashed purple;            /* 與內文用紫色虛線分開 */
+    padding: 10px 15px;
+}
