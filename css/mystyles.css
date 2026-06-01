@@ -57,3 +57,49 @@ section#cta {
 section#cta h2{
     color: green;
 }
+.ryan01{
+    text-align: left;
+    color: purple;
+    background-color: yellow;
+    border: 6px solid purple;
+    padding: 24px 16px;
+    border-radius: 16px;
+    margin: 30px auto 0 auto; 
+    width: 70%;
+    height: auto;
+    overflow-y: auto; 
+    font-size:18px;
+    box-shadow: 8px 8px 0px rgba(128, 0, 128, 0.2);                    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-sizing: border-box;
+}
+.ryan01 h5 {
+    font-size: 18px;
+    font-weight: 900;            
+    color: purple;               
+    margin-bottom: 14px;
+    text-align: center;          
+    letter-spacing: 1px;         
+    border-bottom: 4px double purple; 
+    padding-bottom: 8px;
+}
+
+
+.ryan01 p {
+    font-size: 14px;             
+    line-height: 1.65;           
+    color: #222222;              
+    font-weight: 500;
+    margin-bottom: 18px;         
+    text-align: justify;         
+}
+
+/* 3. 署名美化：手寫結尾感 */
+.ryan01 .text-end {
+    font-size: 12px;             
+    color: #444444;              
+    font-weight: bold;
+    font-style: italic;          
+    padding-top: 8px;
+    margin-top: 10px;
+}
