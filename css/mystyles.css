@@ -130,7 +130,7 @@ body,
 .card-group .card .card-img-top {
     width: 100% !important;
     /* 改用 aspect-ratio (長寬比) 取代死板的 height: 250px */
-    aspect-ratio: 1/1!important; /* 💡 完美標準 16:9 寬螢幕橫版比例！ */
+    aspect-ratio: 1/1 !important; /* 💡 完美標準 16:9 寬螢幕橫版比例！ */
     height: auto !important;          /* 讓高度隨著寬度等比例自動縮放 */
     
     object-fit: cover !important;     /* 保持裁切魔法：圖片永遠置中不拉伸變形 */
