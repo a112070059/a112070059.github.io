@@ -454,3 +454,6 @@ section#cta .social-icon:hover {
     transform: translateY(-5px);         
     box-shadow: 0px 8px 15px rgba(128, 0, 128, 0.3);
 }
+.sp1{
+    background-color: pink;
+}
