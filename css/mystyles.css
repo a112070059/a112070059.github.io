@@ -98,64 +98,56 @@ section#about h2{
     margin-top: 10px;
 }
 
-/* ==========================================================================
-   響應式破版修正：鎖定網頁總寬度 + 防止卡片擠壓圖片變形
-   ========================================================================== */
 
-/* 1. 治本：強制網頁最外層大容器絕對不准超出螢幕寬度，消滅右側白邊 */
+
+
 body, 
 .container-fluid {
     max-width: 100% !important;
-    overflow-x: hidden !important; /* 強制切除所有因為內部爆開而產生的橫向大白邊 */
+    overflow-x: hidden !important; 
 }
 
-/* 2. 修正卡片並排爆開：強迫 .card-group 在螢幕不夠寬時自動換行 */
 .card-group {
     display: flex !important;
-    flex-wrap: wrap !important; /* 核心魔法：寬度不夠時，第三張卡片會自動掉到下一行，絕對不硬撐 */
+    flex-wrap: wrap !important; 
     flex-direction: row !important;
     width: 100% !important;
     margin: 0 auto !important;
 }
 
-/* 3. 重新分配每張卡片在不同解析度下的寬度 */
+
 .card-group .card {
-    /* 在電腦版或中等螢幕下，自動平分寬度（扣掉 margin） */
+
     flex: 1 1 300px !important; 
-    margin: 15px !important;    /* 讓卡片與卡片之間有舒適的喘息空間 */
-    min-width: 280px !important; /* 設定最低防線，絕不允許卡片被擠扁 */
+    margin: 15px !important;    
+    min-width: 280px !important; 
 }
 
-/* 4. 💥 核心修正：固定照片比例，絕對不被壓扁 */
 .card-group .card .card-img-top {
     width: 100% !important;
-    /* 改用 aspect-ratio (長寬比) 取代死板的 height: 250px */
-    aspect-ratio: 1/1 !important; /* 💡 完美標準 16:9 寬螢幕橫版比例！ */
-    height: auto !important;          /* 讓高度隨著寬度等比例自動縮放 */
+    aspect-ratio: 1/1 !important; 
+    height: auto !important;          
     
-    object-fit: cover !important;     /* 保持裁切魔法：圖片永遠置中不拉伸變形 */
+    object-fit: cover !important;     
     object-position: center !important; 
 }
 
-/* 5. 防止卡片內文因為圖片縮放而溢出破版 */
 .card-group .card .card-body {
     padding: 20px !important;
     background-color: #ffffff !important;
 }
-/* ==========================================================================
-   工作經驗專用：黃紫風 ol / ul 清單美化
-   ========================================================================== */
+
 
 .ryan-work-list {
     background-color: #ffffff;
-    border: 3px solid purple; /* 紫色粗邊框 */
+    border: 3px solid purple; 
     border-radius: 12px;
     padding: 25px;
     margin-top: 25px;
-    box-shadow: 5px 5px 0px rgba(128, 0, 128, 0.15); /* 淡淡的紫色立體陰影 */
+    box-shadow: 5px 5px 0px rgba(128, 0, 128, 0.15); 
 }
 
-/* 小區塊標題：黃底紫字 */
+
 .ryan-work-list .list-title {
     color: purple;
     font-weight: 800;
@@ -167,7 +159,7 @@ body,
     margin-bottom: 15px;
 }
 
-/* 有序清單 (ol) 樣式美化 */
+
 .ryan-ol {
     padding-left: 20px;
     margin-bottom: 0;
@@ -180,7 +172,7 @@ body,
     margin-bottom: 12px;
 }
 
-/* 讓 ol 的數字序號直接變成粗體紫色 */
+
 .ryan-ol li::marker {
     color: purple;
     font-weight: bold;
@@ -269,10 +261,10 @@ body,
     display: flex;               
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 250px;           /* 稍微拉高高度，讓格線更好看 */
+    min-height: 250px;           
     box-shadow: 6px 6px 0px rgba(128, 0, 128, 0.15); 
     box-sizing: border-box;
-    position: relative;          /* 方便做內部裝飾 */
+    position: relative;          
 }
 
 
